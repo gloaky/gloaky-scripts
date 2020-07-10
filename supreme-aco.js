@@ -15,7 +15,7 @@ var auto_process = false; // set this to true if you want the checkout to automa
 var billing = {
     name: "gloaky Supreme",
     email: "test@gmail.com",
-    tel: "123456789",
+    tel: "1234567890",
     address: "190 Bowery St",
     address2: "",
     zip: "10012",
