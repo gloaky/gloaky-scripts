@@ -10,7 +10,4 @@
 
 ### Special Thanks
 NateC  
-MattM  
-
-Fly Fred Cook Group  
-https://discord.gg/rfK9VK
+MattM
