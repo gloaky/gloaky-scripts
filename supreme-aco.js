@@ -6,7 +6,12 @@
 // @author       gloak#1141
 // @include      *://*.supremenewyork.com/checkout
 // ==/UserScript==
+//
 
+var checkoutDelay = "3" // number of seconds to delay
+var auto_process = false; // set this to true if you want the checkout to automatically click the process payment button
+
+// billing/shipping information
 var billing = {
     name: "gloaky Supreme",
     email: "test@gmail.com",
@@ -18,14 +23,14 @@ var billing = {
     state: "NY",
     country: "USA"
 };
+
+// credit card information
 var credit_card = {
     number: "12345678901",
     cvv: "123",
     month: "07",
     year: "2021"
 };
-
-var auto_process = true; // set this to true if you want the checkout to automatically click the process payment button
 
 (function () {
     'use strict';
@@ -57,7 +62,7 @@ var auto_process = true; // set this to true if you want the checkout to automat
         if (auto_process) {
             setTimeout(function () {
                 document.getElementById("checkout_form").submit();
-            }, 3000);
+            }, checkoutDelay * 1000);
         }
     }
 })();

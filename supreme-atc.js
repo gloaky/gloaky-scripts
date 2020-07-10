@@ -7,7 +7,7 @@
 // @include      *://*.supremenewyork.com/shop/*/*
 // ==/UserScript==
 
-var wantSize = "10.5";
+var wantSize = "10.5"; // size preferred before random size is chosen
 
 (function () {
     'use strict';
