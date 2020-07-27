@@ -6,7 +6,6 @@
 // @author       gloak#1141
 // @include      *://*.supremenewyork.com/checkout
 // ==/UserScript==
-//
 
 var checkoutDelay = "3" // number of seconds to delay
 var auto_process = false; // set this to true if you want the checkout to automatically click the process payment button
@@ -16,7 +15,7 @@ var billing = {
     name: "gloaky Supreme",
     email: "test@gmail.com",
     tel: "1234567890",
-    address: "190 Bowery St",
+    address1: "190 Bowery St",
     address2: "",
     zip: "10012",
     city: "New York",
@@ -42,7 +41,7 @@ var credit_card = {
         document.getElementsByName("order[billing_name]")[0].value = billing.name;
         document.getElementsByName("order[email]")[0].value = billing.email;
         document.getElementsByName("order[tel]")[0].value = billing.tel;
-        document.getElementsByName("order[billing_address]")[0].value = billing.address;
+        document.getElementsByName("order[billing_address]")[0].value = billing.address1;
         document.getElementsByName("order[billing_address_2]")[0].value = billing.address2;
         document.getElementsByName("order[billing_zip]")[0].value = billing.zip;
         document.getElementsByName("order[billing_city]")[0].value = billing.city;
